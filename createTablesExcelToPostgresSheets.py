@@ -62,7 +62,7 @@ data_type_mapping = {
 def map_data_type(data_type):
     return data_type_mapping.get(data_type, "VARCHAR(255)")
 
-filepath_schema = "Simphony_Table_Schema.xlsx"
+filepath_schema = "Table_Schema.xlsx"
 filepath_data = "Oracle DB Check n Detail Aug2023 (1).xlsx"
 
 file = pd.ExcelFile(filepath_data)
@@ -118,7 +118,7 @@ def generate_tables_from_schema():
         table_fields[table_name].append((field_name, data_type))
 
     engine = create_engine(
-        "postgresql://factadmin:Weavers#456@172.210.3.233:5432/test_potgres_database"
+        "postgresql://user:pass@host:5432/database"
     )
 
     for table_name, fields in table_fields.items():

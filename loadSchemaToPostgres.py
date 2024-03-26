@@ -38,7 +38,7 @@ def generate_sql_for_schema():
 
     # Establish connection to PostgreSQL database
     engine = db.create_engine(
-        "postgresql://factadmin:Weavers#456@172.210.3.233:5432/test_potgres_database"
+        "postgresql://user:pass@host:5432/database"
     )
 
     print(len(table_fields))

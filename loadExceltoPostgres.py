@@ -37,7 +37,7 @@ def map_data_type(data_type):
 filepath = "Simphony_Table_Schema.xlsx"
 
 
-database_connection = create_engine("postgresql://factadmin:Weavers#456@172.210.3.233:5432/test_potgres_database", ISOLATION_LEVEL="AUTOCOMMIT")
+database_connection = create_engine("postgresql://user:pass@host:5432/database", ISOLATION_LEVEL="AUTOCOMMIT")
 
 
 def generate_sql_for_schema():

@@ -120,7 +120,7 @@ def generate_tables_from_schema():
         table_fields[table_name].append((field_name, data_type))
 
     engine = create_engine(
-        "postgresql://factadmin:Weavers#456@172.210.3.233:5432/test_potgres_database"
+        "postgresql://user:ip@/database"
     )
 
     for table_name, fields in table_fields.items():
